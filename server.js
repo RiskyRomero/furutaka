@@ -118,7 +118,7 @@ client.on("message", async message => {
 
 
 
-  if (command === "dcolors") {
+  if (command === "iam") {
     let color = args[0];
     let member = message.member;
 
