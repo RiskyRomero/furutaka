@@ -135,7 +135,7 @@ client.on("message", async message => {
     "color": 1472601,
     "timestamp": new Date(),
     "thumbnail": {
-      "url": "https://media.discordapp.net/attachments/587622206163517441/587625334237823009/caf-colors.png?width=473&height=473"
+      "url": "https://media.discordapp.net/attachments/554302408537276416/554305908528775169/ryumin.gif?width=393&height=393"
     },
     "author": {
       "name": "Ryumin#6263 (Owner)",
@@ -154,7 +154,7 @@ client.on("message", async message => {
 
 // CONFIG | ADD ROLES TO SERVER
 if(color === "list") {
-  message.reply(`Colors currently available: https://www.zupimages.net/up/19/10/p9cl.png`);
+  message.reply(`https://media.discordapp.net/attachments/587622206163517441/587625334237823009/caf-colors.png?width=473&height=473`);
 }
 
     // RESET COLOR TO DEFAULT
