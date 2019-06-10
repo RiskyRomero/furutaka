@@ -119,7 +119,7 @@ client.on("message", async message => {
 
 
   if (command === "iam") {
-    let color = args[0];
+    let color = args[0].toLowerCase();
     let member = message.member;
 
     // IF ARG ARE NOT THERE
