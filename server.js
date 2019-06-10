@@ -70,10 +70,10 @@ function resetColor(message, member){
 
 client.on("ready", () => {
   const activities_list = [
-      "+dColors | for help",
+      ".iam | for help",
       `Serving ${client.users.size} users`,
       `Serving ${client.guilds.size} servers`,
-      `+dColors list | Colors List`
+      `.iam list | Colors List`
       ];
 
 
@@ -102,7 +102,7 @@ client.on("guildCreate", guild => {
 client.on("guildDelete", guild => {
   // this event triggers when the bot is removed from a guild.
   console.log(`I have been removed from: ${guild.name} (id: ${guild.id})`);
-  client.user.setActivity(`+dColors | Serving ${client.guilds.size} servers`);
+  client.user.setActivity(`.iam | Serving ${client.guilds.size} servers`);
 });
 
 client.on("message", async message => {
@@ -127,38 +127,20 @@ client.on("message", async message => {
 
       message.channel.send({
     "embed": {
-    "title": "Thanks for using dColors. You can use the following commands",
-    "description": "\n __**Change your Discord color**__\n*Use color name instead of <color> (Check below for available colors)* \n`+dcolors <color>`\n__**Reset Color to the default**__\n`+dcolors reset`\n__**Other available commands**__\n`+dcolors ping`\n`+dcolors config (WIP)`\n",
+    "description": "\n __**Change your Discord color**__\n`.iam <color>`\n__**Reset Color to the default**__\n`.iam reset`",
     "color": 1472601,
     "timestamp": new Date(),
-    "footer": {
-      "text": "Version 0.1 - ISC License - 2018"
-    },
     "thumbnail": {
       "url": "http://superdizor.com/img/dcolors.png"
     },
     "author": {
-      "name": "dColors - Discord Colors Bot",
-      "icon_url": "http://superdizor.com/img/dcolors.png"
+      "name": "Ryumin#6263 (Owner)",
+      "icon_url": "https://media.discordapp.net/attachments/554302408537276416/554305908528775169/ryumin.gif?width=393&height=393"
     },
     "fields": [
       {
         "name": "Colors",
         "value": "```\nwhite\nsilver\ngray\nblack\nred\nmaroon\nyellow\nbrown\nolive\nlime\ngreen\naqua\nteal\nblue\nnavy\nmagenta\npurple\norange\nmint\nbeige\nlavender\npink```"
-      },
-      {
-        "name": "You like this bot ?",
-        "value": "[Invite **dColors** to your server](https://discordapp.com/oauth2/authorize?&client_id=456585537621327882&scope=bot&permissions=0)"
-      },
-      {
-        "name": "GitHub",
-        "value": "[Open Source on GitHub](https://github.com/SuperDizor/dColors) \n *This is one of my first JavaScript Project.* \n*Give me constructive feedback* ",
-        "inline": true
-      },
-      {
-        "name": "Social",
-        "value": "[Twitter](https://twitter.com/SuperDizor)\n",
-        "inline": true
       }
     ]
   }
@@ -170,12 +152,6 @@ client.on("message", async message => {
 if(color === "list") {
   message.reply(`Colors currently available: https://www.zupimages.net/up/19/10/p9cl.png`);
 }
-
-
-    // CONFIG | ADD ROLES TO SERVER
-    if(color === "config") {
-      message.reply(`config is currently WIP`);
-    }
 
     // RESET COLOR TO DEFAULT
     if(color === "reset") {
@@ -407,12 +383,6 @@ if(color === "list") {
       // Add the role & tell the user his color changed.
       member.addRole(roleArray).catch(console.error);
       message.reply(`color changed for ${color}.`);
-    }
-
-    // PING
-    if(color === "ping") {
-      const m = await message.channel.send("Ping?");
-      m.edit(`Ping isn't a color but Latency is ${m.createdTimestamp - message.createdTimestamp}ms. API Latency is ${Math.round(client.ping)}ms`);
     }
   }
 
