@@ -1,0 +1,15 @@
+{
+  "name": "dColors",
+  "version": "0.1.0",
+  "description": "Colors Discord Bot",
+  "main": "bot.js",
+  "author": "SuperDizor",
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/SuperDizor/dcolors.git"
+  },
+  "license": "(ISC)",
+  "dependencies": {
+    "discord.js": "^11.3.2"
+  }
+}
