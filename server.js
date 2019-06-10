@@ -115,6 +115,10 @@ client.on("message", async message => {
 
   const args = message.content.slice(process.env.PREFIX.length).trim().split(/ +/g);
   const command = args.shift().toLowerCase();
+  
+  if (message.channel.id !== "587622206163517441") {
+    return message.channel.send(message.author + ", command can only be used in <#587622206163517441>")
+  }
 
 
 
@@ -131,7 +135,7 @@ client.on("message", async message => {
     "color": 1472601,
     "timestamp": new Date(),
     "thumbnail": {
-      "url": "http://superdizor.com/img/dcolors.png"
+      "url": "https://media.discordapp.net/attachments/587622206163517441/587625334237823009/caf-colors.png?width=473&height=473"
     },
     "author": {
       "name": "Ryumin#6263 (Owner)",
