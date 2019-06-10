@@ -16,28 +16,28 @@ setInterval(() => {
 
 // Declare Colors
 var rolesColors = [
-  "dWhite",
-  "dSilver",
-  "dGray",
-  "dBlack",
-  "dRed",
-  "dMaroon",
-  "dYellow",
-  "dBrown",
-  "dOlive",
-  "dLime",
-  "dGreen",
-  "dAqua",
-  "dTeal",
-  "dBlue",
-  "dNavy",
-  "dMagenta",
-  "dPurple",
-  "dOrange",
-  "dMint",
-  "dBeige",
-  "dLavender",
-  "dPink"
+  "White",
+  "Silver",
+  "Gray",
+  "Black",
+  "Red",
+  "Maroon",
+  "Yellow",
+  "Brown",
+  "Olive",
+  "Lime",
+  "Green",
+  "Aqua",
+  "Teal",
+  "Blue",
+  "Navy",
+  "Magenta",
+  "Purple",
+  "Orange",
+  "Mint",
+  "Beige",
+  "Lavender",
+  "Pink"
 ];
 
 var cRed = "\x1b[31m";
@@ -96,7 +96,7 @@ client.on("ready", () => {
 client.on("guildCreate", guild => {
   // This event triggers when the bot joins a guild.
   console.log(`New guild joined: ${guild.name} (id: ${guild.id}). This guild has ${guild.memberCount} members!`);
-  client.user.setActivity(`+dColors | Serving ${client.guilds.size} servers`);
+  client.user.setActivity(`Meow | Serving ${client.guilds.size} servers`);
 });
 
 client.on("guildDelete", guild => {
