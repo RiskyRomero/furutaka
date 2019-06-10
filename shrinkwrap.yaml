@@ -416,5 +416,5 @@ registry: 'https://registry.npmjs.org/'
 shrinkwrapMinorVersion: 9
 shrinkwrapVersion: 3
 specifiers:
-  discord.js: ^11.3.2
+  discord.js: ^11.5.1
   express: ^4.16.4
