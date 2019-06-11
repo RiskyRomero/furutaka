@@ -80,7 +80,7 @@ client.on("ready", () => {
 
 
   client.user.setStatus('idle');
-  client.user.setActivity('JavaScript while starting...', {type: 'PLAYING'});
+  client.user.setActivity('Starting Bot...', {type: 'PLAYING'});
   printLog("Bot Starting...",cRed);
 
   setInterval(() => {
