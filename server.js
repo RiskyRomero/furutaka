@@ -72,8 +72,10 @@ client.on("ready", () => {
   const activities_list = [
       ".iam | for help",
       `Serving ${client.users.size} users`,
-      `Serving ${client.guilds.size} servers`,
-      `.iam list | Colors List`
+      `I love Ryumin!`,
+      `.iam list | Colors List`,
+      `I love Kotori!`,
+      `Am I a slave?`
       ];
 
 
@@ -115,16 +117,14 @@ client.on("message", async message => {
 
   const args = message.content.slice(process.env.PREFIX.length).trim().split(/ +/g);
   const command = args.shift().toLowerCase();
-  
-  if (message.channel.id !== "587622206163517441") {
-    return message.channel.send(message.author + ", command can only be used in <#587622206163517441>")
-  }
-
-
 
   if (command === "iam") {
     let color = args[0].toLowerCase();
     let member = message.member;
+    
+    if (message.channel.id !== "587622206163517441") {
+      return message.channel.send(message.author + ", command can only be used in <#587622206163517441>")
+    }
 
     // IF ARG ARE NOT THERE
     if(!color || color === "help") {
@@ -176,7 +176,7 @@ if(color === "list") {
       resetColor(message, member);
       // Add the role & tell the user his color changed.
       member.addRole(roleArray).catch(console.error);
-      message.reply(`color changed for ${color}.`);
+      message.reply(`color changed to ${color}.`);
     }
 
     // SILVER
@@ -186,7 +186,7 @@ if(color === "list") {
       resetColor(message, member);
       // Add the role & tell the user his color changed.
       member.addRole(roleArray).catch(console.error);
-      message.reply(`color changed for ${color}.`);
+      message.reply(`color changed to ${color}.`);
     }
 
     // GRAY
@@ -196,7 +196,7 @@ if(color === "list") {
       resetColor(message, member);
       // Add the role & tell the user his color changed.
       member.addRole(roleArray).catch(console.error);
-      message.reply(`color changed for ${color}.`);
+      message.reply(`color changed to ${color}.`);
     }
 
     // BLACK
@@ -206,7 +206,7 @@ if(color === "list") {
       resetColor(message, member);
       // Add the role & tell the user his color changed.
       member.addRole(roleArray).catch(console.error);
-      message.reply(`color changed for ${color}.`);
+      message.reply(`color changed to ${color}.`);
     }
 
     // RED
@@ -216,7 +216,7 @@ if(color === "list") {
       resetColor(message, member);
       // Add the role & tell the user his color changed.
       member.addRole(roleArray).catch(console.error);
-      message.reply(`color changed for ${color}.`);
+      message.reply(`color changed to ${color}.`);
     }
 
     // MAROON
@@ -226,7 +226,7 @@ if(color === "list") {
       resetColor(message, member);
       // Add the role & tell the user his color changed.
       member.addRole(roleArray).catch(console.error);
-      message.reply(`color changed for ${color}.`);
+      message.reply(`color changed to ${color}.`);
     }
 
     // YELLOW
@@ -236,7 +236,7 @@ if(color === "list") {
       resetColor(message, member);
       // Add the role & tell the user his color changed.
       member.addRole(roleArray).catch(console.error);
-      message.reply(`color changed for ${color}.`);
+      message.reply(`color changed to ${color}.`);
     }
 
     // BROWN
@@ -246,7 +246,7 @@ if(color === "list") {
       resetColor(message, member);
       // Add the role & tell the user his color changed.
       member.addRole(roleArray).catch(console.error);
-      message.reply(`color changed for ${color}.`);
+      message.reply(`color changed to ${color}.`);
     }
 
     // OLIVE
@@ -256,7 +256,7 @@ if(color === "list") {
       resetColor(message, member);
       // Add the role & tell the user his color changed.
       member.addRole(roleArray).catch(console.error);
-      message.reply(`color changed for ${color}.`);
+      message.reply(`color changed to ${color}.`);
     }
 
     // LIME
@@ -266,7 +266,7 @@ if(color === "list") {
       resetColor(message, member);
       // Add the role & tell the user his color changed.
       member.addRole(roleArray).catch(console.error);
-      message.reply(`color changed for ${color}.`);
+      message.reply(`color changed to ${color}.`);
     }
 
     // GREEN
@@ -276,7 +276,7 @@ if(color === "list") {
       resetColor(message, member);
       // Add the role & tell the user his color changed.
       member.addRole(roleArray).catch(console.error);
-      message.reply(`color changed for ${color}.`);
+      message.reply(`color changed to ${color}.`);
     }
 
     // AQUA
@@ -286,7 +286,7 @@ if(color === "list") {
       resetColor(message, member);
       // Add the role & tell the user his color changed.
       member.addRole(roleArray).catch(console.error);
-      message.reply(`color changed for ${color}.`);
+      message.reply(`color changed to ${color}.`);
     }
 
     // TEAL
@@ -296,7 +296,7 @@ if(color === "list") {
       resetColor(message, member);
       // Add the role & tell the user his color changed.
       member.addRole(roleArray).catch(console.error);
-      message.reply(`color changed for ${color}.`);
+      message.reply(`color changed to ${color}.`);
     }
 
     // BLUE
@@ -306,7 +306,7 @@ if(color === "list") {
       resetColor(message, member);
       // Add the role & tell the user his color changed.
       member.addRole(roleArray).catch(console.error);
-      message.reply(`color changed for ${color}.`);
+      message.reply(`color changed to ${color}.`);
     }
 
     // NAVY
@@ -316,7 +316,7 @@ if(color === "list") {
       resetColor(message, member);
       // Add the role & tell the user his color changed.
       member.addRole(roleArray).catch(console.error);
-      message.reply(`color changed for ${color}.`);
+      message.reply(`color changed to ${color}.`);
     }
 
     // MAGENTA
@@ -326,7 +326,7 @@ if(color === "list") {
       resetColor(message, member);
       // Add the role & tell the user his color changed.
       member.addRole(roleArray).catch(console.error);
-      message.reply(`color changed for ${color}.`);
+      message.reply(`color changed to ${color}.`);
     }
 
     // PURPLE
@@ -336,7 +336,7 @@ if(color === "list") {
       resetColor(message, member);
       // Add the role & tell the user his color changed.
       member.addRole(roleArray).catch(console.error);
-      message.reply(`color changed for ${color}.`);
+      message.reply(`color changed to ${color}.`);
     }
 
     // ORANGE
@@ -346,7 +346,7 @@ if(color === "list") {
       resetColor(message, member);
       // Add the role & tell the user his color changed.
       member.addRole(roleArray).catch(console.error);
-      message.reply(`color changed for ${color}.`);
+      message.reply(`color changed to ${color}.`);
     }
 
     // MINT
@@ -356,7 +356,7 @@ if(color === "list") {
       resetColor(message, member);
       // Add the role & tell the user his color changed.
       member.addRole(roleArray).catch(console.error);
-      message.reply(`color changed for ${color}.`);
+      message.reply(`color changed to ${color}.`);
     }
 
     // BEIGE
@@ -366,7 +366,7 @@ if(color === "list") {
       resetColor(message, member);
       // Add the role & tell the user his color changed.
       member.addRole(roleArray).catch(console.error);
-      message.reply(`color changed for ${color}.`);
+      message.reply(`color changed to ${color}.`);
     }
 
     // LAVENDER
@@ -376,7 +376,7 @@ if(color === "list") {
       resetColor(message, member);
       // Add the role & tell the user his color changed.
       member.addRole(roleArray).catch(console.error);
-      message.reply(`color changed for ${color}.`);
+      message.reply(`color changed to ${color}.`);
     }
 
     // PINK
@@ -386,7 +386,7 @@ if(color === "list") {
       resetColor(message, member);
       // Add the role & tell the user his color changed.
       member.addRole(roleArray).catch(console.error);
-      message.reply(`color changed for ${color}.`);
+      message.reply(`color changed to ${color}.`);
     }
   }
 
